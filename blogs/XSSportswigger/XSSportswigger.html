@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilizando el markdown con fetching</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="container-fluid row w-100 p-3">
+
+    <!-- HEADER -->
+
+    <header class="row ">
+      <img class="w-25 p-3" src="/public/Nautilus-logo.png" alt="Nautilus-logo" />
+      <hr class="border border-danger border-2 opacity-50">
+    </header>
+
+    <!-- LEFT COLUMN -->
+    <section class="left-column col-3">
+      <h2>Kaizen</h2>
+      <img class="my-photo" src="/public/Pulpo nautilus.jpg" />
+      <hr />
+      <article class="description">
+          <h3>Whoami</h3>
+          <p>I AM YOUR WORST NIGHMARE!</p>
+      </article>
+      <a href="/index.html" > Todos los blogs </a>
+    </section>
+
+    <!-- CENTER COLUMN -->
+
+    <section id="markdown-content" class="center-column col-6 content-container" name="markdown-content">
+      <div id="loader" class="loader">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <img src="..." class="card-img-top" alt="...">
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder w-75"></span>
+        <span class="placeholder" style="width: 25%;"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-12 placeholder-xs"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder col-12"></span>
+        <span class="placeholder col-12 placeholder-sm"></span>
+        <span class="placeholder w-75"></span>
+      </div>
+      <img src="..." class="card-img-top" alt="...">
+    </section>
+
+    <!-- RIGHT COLUMN -->
+
+    <section class="right-column col-3">
+      <!-- class="list-group-item list-group-item-action" onclick="loadMarkdown('XSSportswigger.md')" -->
+      <!-- <div class="list-group  btn-group">
+        <button type="radio"  >A second button item</button>
+        <button type="radio" class="list-group-item list-group-item-action" onclick="loadMarkdown('OtroArchivo.md')" >A third button item</button>
+        <button type="radio" class="list-group-item list-group-item-action" onclick="loadAnotherMarkdown('XSSportswigger.md')" >A fourth button item</button>
+        <button type="radio" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+      </div> -->
+
+      <div class="btn-group list-group " role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('example.md')" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-danger" for="btnradio1">First button</label>
+
+        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('XSSportswigger.md')" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-danger" for="btnradio2">Second button</label>
+      
+        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('OtroArchivo.md')" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="btnradio3">Third Button</label>
+      
+        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('OtroArchivoMas.md')" name="btnradio" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-danger" for="btnradio4">Fourth Button</label>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="botones-fin btn-toolbar d-flex justify-content-end row align-items-end container-fluid" role="toolbar"
+      aria-label="Toolbar with button groups">
+      <div class="btn-group me-2 w-25 p-3 col" role="group" aria-label="First group">
+        <button type="button" class="btn  botones-fin btn-danger" onclick="loadMarkdown('example.md')">
+          <a>1</a>
+        </button>
+        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('OtroArchivoMas.md')">
+          <a>2</a>
+        </button>
+        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('XSSportswigger.md')">
+          <a>3</a>
+        </button>
+        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('OtroArchivo.md')">
+          <a>4</a>
+        </button>
+      </div>
+    </footer>
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-evenly">
+          <a href="https://twitter.com/freecodecampES" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+          </a>
+          <a  href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/freecodecamp/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+          </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Jane Doe (2022) &#169;</div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

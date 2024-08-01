@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+*{
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+}
+
+.left-column, .center-column, .right-column {
+    padding: 20px;
+    border: 1px solid rgb(165, 29, 42);
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.left-column {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-column {
+    grid-column: 2 / 3;
+}
+
+.right-column {
+    grid-column: 3 / 4;
+}
+
+footer {
+    grid-column: 1 / 4;
+    padding: 20px;
+    border-top: 1px solid rgb(165, 29, 42);
+}
+
+.logos img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.my-photo{
+    border-radius: 50px;
+    width: 100px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a.link-to-blog {
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Efecto hover */
+a.link-to-blog:hover {
+    color: #ffffff57;
+    background-color: #ffffff06;
+}
+
+
+
+html, body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    --bs-gutter-x: 0;
+}
+
+:root {
+    --bs-gutter-x: 0; 
+  }
+  
+
+.custom-container {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.custom-container{
+ --bs-gutter-x: 0%;
+} 
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: unset;
+  }
+
+.vulnerabillity{
+    color: rgb(165, 29, 42);;
+}
+
+.difficulty{
+    color: rgb(150, 112, 0);
+}
+
+.category{
+    color: rgb(20, 108, 67);
+}
+
+@media (max-width: 992px) {
+    .left-column, .right-column {
+        display: none;
+    }
+    .center-column {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .botones{
+        display: none;
+    }
+}
+
+.transparent-input {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    font-size: 16px;
+    color: rgb(165, 29, 42); /* Color del texto */
+}
+
+.iconos-redes-sociales{
+    width: 25%;
+}
+
+i:hover{
+    background: #fff;
+    color: #000;
+    border-radius: 7px;
+}

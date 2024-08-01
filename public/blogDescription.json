@@ -1,0 +1,25 @@
+[
+    {
+        "anchor": "./blogs/XSSportswigger/XSSportswigger.html",
+        "title": "Ejemplo del blog con fething",
+        "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch, las ventajas d este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida de llevar tus apuntes",
+        "date": "12/12/2012",
+        "category": "miscellanus",
+        "vulnerabillity": "XSS"
+    },
+    {
+        "anchor": "./blogs/MundoGaturro/mundoGaturro.html",
+        "title": "Hacke mundo gaturro",
+        "descriptions": "Este es un blog donde hackeamos el popular jueguito Argentino llamada \"Mundo Gaturro\" utilizando CheatEngine",
+        "date": "7/7/2014",
+        "category": "history",
+        "vulnerabillity": "Broken Access Control"
+    },
+    {
+        "anchor": "./blogs/estoy-cansado-jefe/estoyCansadoJefe.html",
+        "title": "Estoy cansado jefe",
+        "descriptions": "En este blogs discutermos como muchos hackeos puden causar tunel carpal y arruinarte la vida",
+        "date": "24/7/2024",
+        "category": "history"
+    }
+]
