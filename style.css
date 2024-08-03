@@ -162,3 +162,30 @@ i:hover{
 
     }
 }
+
+@keyframes slidein{
+    0% {
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+    }
+
+    30% {
+        top: 50px;
+        opacity: 0.3;
+
+    }
+
+    68%,
+    72% {
+        left: 50px;
+        opacity: 0.7;
+    }
+
+    100% {
+        top: 100px;
+        left: 100%;
+        opacity: 1;
+    }
+}
