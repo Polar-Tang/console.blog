@@ -186,20 +186,34 @@
 
     <section class="right-column col-3">
 
-      <div class="btn-group list-group " role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('example.md')" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-danger" for="btnradio1">First button</label>
-
-        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('XSSportswigger.md')" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-danger" for="btnradio2">Second button</label>
-      
-        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('OtroArchivo.md')" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-danger" for="btnradio3">Third Button</label>
-      
-        <input type="radio" class="btn-check" class="list-group-item list-group-item-action" onclick="loadMarkdown('OtroArchivoMas.md')" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-danger" for="btnradio4">Fourth Button</label>
-      </div>
-    </section>
+        <div class="btn-group list-group " role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action" name="btnradio"
+            id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-danger" for="btnradio1">
+            <a href="#">
+              Como hacer md2html manualmente
+            </a>
+          </label>
+  
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action" name="btnradio"
+            id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btnradio2">
+            <a href="./manual&fetching.html">
+              Como mezclo md2html manual con fetching?
+            </a>
+          </label>
+  
+  
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action"
+             name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btnradio3">
+            <a href="./ejemplo.html">
+              ejemplo
+  
+            </a>
+          </label>
+  
+      </section>
 
     <!-- FOOTER -->
 
@@ -207,17 +221,19 @@
       aria-label="Toolbar with button groups">
       <div class="btn-group me-2 w-25 p-3 col" role="group" aria-label="First group">
         <button type="button" class="btn  botones-fin btn-danger" onclick="loadMarkdown('example.md')">
-          <a>1</a>
+          <a href="./manual-md2html.html">
+            manual-md2html
+          </a>
         </button>
         <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('OtroArchivoMas.md')">
-          <a>2</a>
+          <a href="./manual&fetching.html">
+            combinación
+          </a>
         </button>
         <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('XSSportswigger.md')">
-          <a>3</a>
-        </button>
-        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('OtroArchivo.md')">
-          <a>4</a>
-        </button>
+          <a href="#">
+            ejemple
+        </a>
       </div>
     </footer>
 

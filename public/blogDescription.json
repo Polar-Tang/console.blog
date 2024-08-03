@@ -1,9 +1,16 @@
 [
+    {"anchor": "./blogs/Manual-md2html/manual-md2html.html",
+        "title": "Ejemplo del blog pasado de md a html manualmente",
+        "descriptions": "Este es un ejemplo de como renderizar las páginas de md a html de una manera manual, requiere algunos conocimientos de HTML5. Las ventajas de este método es su capacidad de personalización a la hora de hacer subir tus apuntes al blog.",
+        "date": "2/8/2024",
+        "category": "miscellanus",
+        "vulnerabillity": "IDOR"
+    },
     {
         "anchor": "./blogs/XSSportswigger/XSSportswigger.html",
         "title": "Ejemplo del blog con fething",
-        "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch, las ventajas d este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida de llevar tus apuntes",
-        "date": "12/12/2012",
+        "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch. Las ventajas de este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida y sencilla de llevar tus apuntes pero está limitada en cuestiones de personalización",
+        "date": "2/8/2024",
         "category": "miscellanus",
         "vulnerabillity": "XSS"
     },

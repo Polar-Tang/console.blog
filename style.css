@@ -71,7 +71,7 @@ a.link-to-blog {
 
 /* Efecto hover */
 a.link-to-blog:hover {
-    color: #ffffff57;
+    color: #fff;
     background-color: #ffffff06;
 }
 
@@ -107,7 +107,7 @@ html, body {
   }
 
 .vulnerabillity{
-    color: rgb(165, 29, 42);;
+    color: rgb(165, 29, 42);
 }
 
 .difficulty{
@@ -148,4 +148,17 @@ i:hover{
     background: #fff;
     color: #000;
     border-radius: 7px;
+}
+
+/* #input{
+    background-color: none;
+} */
+
+@media (max-width: 992px) {
+    header{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    }
 }

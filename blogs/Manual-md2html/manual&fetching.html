@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hace tus blogs en HTML manualmente</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container-fluid row w-100 p-3">
+
+    <!-- HEADER -->
+
+    <header class="row ">
+      <img class="w-25 p-3" src="/public/Nautilus-logo.png" alt="Nautilus-logo" />
+      <hr class="border border-danger border-2 opacity-50">
+    </header>
+
+    <!-- LEFT COLUMN -->
+    <section class="left-column col-3">
+      <h2>Kaizen</h2>
+      <img class="my-photo" src="/public/Pulpo nautilus.jpg" />
+      <hr />
+      <article class="description">
+        <h3>Whoami</h3>
+        <p>I AM YOUR WORST NIGHMARE!</p>
+      </article>
+      <a href="/index.html"> Todos los blogs </a>
+    </section>
+
+    <!-- CENTER COLUMN -->
+
+    <section id="markdown-content" class="center-column col-6 content-container" name="markdown-content">
+      <h3>Vea ambos blogs y decida como desarrollar su página</h3>
+      <hr />
+      <p>
+        La principal diferencia con el otro método es que serán distintas páginas, me explico. Cuando teníamos un
+        fetching, era un solo
+        "index.html" trayendo el contenido del markdown, cuando hacíamos click en el button el fetching cargaba el
+        markdown y
+        traía el contenido del markdown a la página, algo así como el procedimiento del
+      <p title="One Sigle Page Aplication es una web que rescribe la página en vez de recargarla completamente">SPA.</p>
+      En cambio las
+      páginas por defecto se cargan todas completamente, por lo que es importante que te lleves las etiquetas link y
+      script.
+      También es destacable porque los botones que traían el md ahora sirven para recargar el documento completamente,
+      por lo que si ves el código observarás
+      que es distinto.
+      <hr>
+      Tal vez tenga interés en hacer alguna página solo con fetching detrás pero la otra no, en este caso debe copiar la
+      página
+      <a href="../XSSportswigger/XSSportswigger.html">Haciendo tus blogs de manera sencilla</a> con su respectivo
+      <a href="../XSSportswigger/script.js"> script </a> y esta pagina será un anchor (osea la etiqueta a). De todas
+      formas estaré dejando
+      un ejemplo por sino quedo claro
+      </p>
+    </section>
+
+    <!-- RIGHT COLUMN -->
+
+    <section class="right-column col-3">
+
+      <div class="btn-group list-group right-list " role="group" aria-label="Basic radio toggle button group">
+        <div class="list-group-item list-group-item-action border-danger right-botones">
+          <a class="     " href="./manual-md2html.html">
+            Como hacer md2html manualmente
+          </a>
+        </div>
+
+        <div class="list-group-item list-group-item-action border-danger right-botones">
+          <a href="#">
+            Como mezclo md2html manual con fetching?
+          </a>
+        </div>
+
+
+        <div class="list-group-item list-group-item-action border-danger right-botones">
+
+          <a href="./ejemplo.html">
+            ejemplo
+          </a>
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+
+    <footer class="botones-fin btn-toolbar d-flex justify-content-end row align-items-end container-fluid"
+      role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2 w-25 p-3 col" role="group" aria-label="First group">
+        <button type="button" class="btn  botones-fin btn-danger" onclick="loadMarkdown('example.md')">
+          <a href="./manual-md2html.html">
+            manual-md2html
+          </a>
+        </button>
+        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('OtroArchivoMas.md')">
+          <a href="#">
+            combinación
+          </a>
+        </button>
+        <button type="button" class="btn botones-fin btn-danger" onclick="loadMarkdown('XSSportswigger.md')">
+          <a href="./ejemplo.html">
+            ejemple
+          </a>
+      </div>
+    </footer>
+
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-evenly">
+        <a href="https://twitter.com/freecodecampES" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/freecodecamp/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Jane Doe (2022) &#169;</div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
