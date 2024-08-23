@@ -9,7 +9,7 @@
     {
         "anchor": "./blogs/XSSportswigger/XSSportswigger.html",
         "title": "Ejemplo del blog con fething",
-        "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch. Las ventajas de este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida y sencilla de llevar tus apuntes pero está limitada en cuestiones de personalización",
+        "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch de JavaScript. Las ventajas de este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida y sencilla de llevar tus apuntes pero está limitada en cuestiones de personalización",
         "date": "2/8/2024",
         "category": "miscellanus",
         "vulnerabillity": "XSS"

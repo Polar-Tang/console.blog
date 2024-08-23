@@ -127,6 +127,7 @@ html, body {
     }
 }
 
+
 @media (min-width: 992px) {
     .botones{
         display: none;
