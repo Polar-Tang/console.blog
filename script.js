@@ -55,7 +55,7 @@ const renderDescriptions = (descriptions) => {
                     <div class="details row w-100">
                         <p class="date col-3 d-flex justify-content-start "> ${description.date} </p>
                         <div class="col-9 gap-3 d-flex justify-content-end" >
-                        ${description.vulnerabillity ? `<p class="vulnerabillity border border-danger danger text">  ${description.vulnerabillity}   </p>` : ''}
+                        ${description.vulnerabillity ? `<p class="vulnerabillity border border-danger danger gap-10 text">  ${description.vulnerabillity}   </p>` : ''}
                         ${description.category ? `<p class="category border border-success-subtle text ">     ${description.category}    </p>` : ''}
                         ${description.difficulty ? `<p class="difficulty border border-warning text ">   ${description.difficulty}   </p>` : ''}    
                         </div>

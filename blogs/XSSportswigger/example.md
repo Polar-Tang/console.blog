@@ -1,5 +1,4 @@
 ### Esta es la explicación de la página con el método fetch
-## Vea ambos blogs y decida como desarrollar su página
 - - -
 En este archivo pretendo describir brevemente el método fetch y como utilizar esta página en función a la librería [marked.js](https://marked.js.org/), la cual automatiza el proceso de pasar del lenguaje md a html. 
 

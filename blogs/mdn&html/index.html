@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mdn&html</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+  <div class="container-fluid row w-100">
+
+    <!-- HEADER -->
+
+    <header class="row ">
+      <div class="col-12 col-md-6">
+        <a class="w-50 w-md-25 p-3" href="/index.html">
+        <img class="w-50 w-md-25 p-3 personal-logo" src="/public/Nautilus-logo.png" alt="Nautilus-logo" />
+        </a>
+      </div>
+      <hr class="border border-danger border-2 opacity-50">
+    </header>
+
+    <!-- LEFT COLUMN -->
+    <section class="left-column col-3">
+      <h2>Kaizen</h2>
+      <img class="my-photo" src="/public/Pulpo nautilus.jpg" />
+      <hr />
+      <article class="description">
+          <h3>Whoami</h3>
+          <p>I AM YOUR WORST NIGHMARE!</p>
+      </article>
+      <a href="/index.html" > Todos los blogs </a>
+    </section>
+
+    <!-- CENTER COLUMN -->
+
+    <section class="center-column col-6 content-container" name="markdown-content">
+        <h4 id="#contexto">Que onda programación web?</h4>
+        <p>En un principio las páginas web eran muchísimo más simple de lo que son hoy en día, lo cual sería un problema si tuvieras que hacer tu página web desde cero por las situaciones complejas en las que se puede encontrar de repente. El <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML" class="code">
+            HTML
+        </a> es la estructura, las primeras páginas eran solo html, más tarde se le agregaría css para darle estilo para que no luzcan todas como wikipedia y php para el backend, <a target="_blank" href="https://www.php.net/manual/es/history.php.php" class="code">aqui puedes ver más sobre la historia de php,</a> poco más tarde  <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript" class="code">Mocha,</a> es decir JavaScript, el cuál se usa para la ejecución del código desde el<p title="el lado del cliente es se ejecuta desde el browser y se actualiza en tiempo real. Sin ejecución del lado del cliente no podría haber el típico cronometro de los test, por ejemplo.">lado del cliente</p> y más tarde se podría utilizar también en el backend con EcmaScript5, haciendo que el backend no deba ser estrictamente en php. Sin embargo ahora se puede hacer el backend en casi cualquier lenguaje. </p>
+      <hr class="border border-danger border-2 opacity-50">
+        <h4 id="fundamentos">Conceptos básicos</h4>
+        <p> HTML, CSS y JavaScript (me referire a esta triada como HTML5) destronó a php y es lo que necesitas entendes, por lo menos lo básico para poder personalizan tu página. HTML y CSS no son un lenguaje de programación como tal, sino más bien se le llama "lenguaje de etiquetas". Esto singifica que ne vez de logica complicadas, bucles y esas cosas raras que nos gusta a los programadores no está como tal, sino son serie de palabras reservedas con una sintaxis sencilla:  una etiqueta se abre "<" y se cierra ">" envolviendo a dicha palabra reservada, y en la mayoria de etiquetas es común que dicha palabra se repita pero con una barra, 
+    <img src="/public/ejemplo-etiqueta.png" class="container" alt="Ejemplo de una etiqueta <p></p>"> tienen esta predisposición para que ambas etiquetas gemelas puedan envorler el contenido, pero además dentro de las etiquetas existen palabras reservadas, similares a variables sintáctimanete hablando, que son llamada atributos, y son justamente las que atribuyen cierta propiedad en está etiqueta. No explicaría todas las etiquetas porque soy un ser mortal, pero recomiendo ampliamente leer siempre la documentación oficial de JavaScript, <a target="_blank" href="https://developer.mozilla.org/es/">Mdn Web Docs (en español),</a> "Mdn huevos" si queres pronunciarlo más rápido. Pero las etiquetas más básicas son  `&lt;a href=""&gt &lt;/a&gt;` es llamada anchor y href es la dirección http, en el caso nuestro contiene rutas absulutas y relativas sin el "https://" porque está dentro de la página, <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link">&lt;link href=""&gt&lt;/link&gt; </a> comunica la página con elementos externos y es usado para el css &lt;/img&gt; con src que viene de source, es lo mismo que href, alt se utiliza para dar una descripcion, script es para introducir código de JavaScript y se usa el atributo src="" para cargar un archivo separado 
+     <br/>
+    <p>Pero un momento, cargar archivos externos? no puedo meter todo adentro de la etiqueta y a seguir adelante? Pues si, la etiqueta script puede envolver código JavaScript y el estilo puede ser incluido dentro de la etiqueto con el atributo style</p>
+    <img src="/public/ejemplo-etiquete-style.png" class="container"/> Pero antes que hacer esto es recomendable crear un archivo css aparte, comunicarlo con una etiqueta link y darles atributos <a href="https://developer.mozilla.org/es/docs/Web/HTML/Global_attributes/class">
+        class="" 
+    </a>para después darles estilo y funcionalidad desde la carpeta JS. También el atributo id se puede usar con el mismo própisto, pero este no se puede repetir.
+<br/> 
+HTML5 es leído por el navegador, de arriba abajo, izquierda y derecha de forma asíncrona, es decir, cualquiera arriba de está se mostrará arriba. Esto significa que si llama un cdn con estilos y justo debajo otra etiqueta link con mis propios estilos, la segunda etiqueta sink estará sobre-escribiendo la primera </p>
+<br/>
+<p>La anidación es cuando un elemento esta contenido dentro de otro, normalmente se refiere como hijo al que esta contenido dentro de una etiqueta llamada "padre". Es importante saber esto porque las etiquetas ocupan espacio, ya sea <a target="_blank" href="https://developer.mozilla.org/es/docs/Glossary/Block-level_content">en bloque</a>, es decir ocupando todo el ancho del padre, o en línea, ocupando el menor espacio posible, estos parrafos tiene display: inline,
+    <img src="/public/ejemplo-etiquete-style.png" alt="display: inline"> porque de lo contrario las etiquetas hijo ocuparían todo el ancho del padre, sería como que después de cada anchor, por ejemplo, allá un punto final, porque el anchor ocuparía todo el ancho del padre, las etiquetas p, y por lo tanto desplazaría el siguiente texto al siguiente renglón</p>
+    <hr class="border border-danger border-2 opacity-50">
+    <h4 id="librería">¿Como personalizo mi blog?</h4> 
+    <p>Este blog utiliza <a target="_blank" href="https://getbootstrap.com/">Bootstrap </a>como librería, para traer funciones de javascript predefinidas y estilos en CSS predefinidos, supuestamente para hacer el css más sencillo y menos doloroso, personalmente paso muchísimo más tiempo escribiendo el blog y haciendo el css que la parte divertida, ósea el código. Para entenderlo de una forma sencilla es como si alguien pusiera un extenso código de Js y CSS en la web y los dejara publicos, para que mediante el atributo src y href me pueda traer esas funcionalidades, ¿Pero como las funcionalidades se presentan? pues estos "archivos públicos" manipulan id's y clases, lo único que debo hacer es utilizar esas clases e ids en mis etiquetas con el link a dichos archivos presentes y gualá. Entonces la idea sería manipular todo simplemente dandole clases que son palabras reservadas. Les recomiendo que exploren los archivos Bootstrap y vean lo que ofrece, también pueden reescribir los colores sino les gusta el estilo de esta página, les dejo unos links que seguro usarán </p>
+    <div> <a target="_blank" href="https://getbootstrap.com/docs/5.3/utilities/sizing/"> Tamaños</a></div>  
+    <div> <a target="_blank" href="https://getbootstrap.com/docs/5.3/utilities/colors/"> colores</a></div> 
+    <div> <a  target="_blank" href="https://getbootstrap.com/docs/5.3/utilities/colors/"> colores</a></div> 
+    <div> <a  target="_blank" href="https://getbootstrap.com/docs/5.3/utilities/flex/"> dispocisión de los elementos, oséa donde ubircarlos</a></div> 
+    <div> <a target="_blank" href="https://getbootstrap.com/docs/5.3/layout/grid/"> dispocisión de los elementos utilizando grillas</a></div> 
+    <hr class="border border-danger border-2 opacity-50">
+    <section id="markdown-content" name="markdown-content">
+        <div id="loader" class="loader">
+          <span class="placeholder col-6"></span>
+          <span class="placeholder col-12 placeholder-xs"></span>
+          <span class="placeholder w-75"></span>
+          <span class="placeholder" style="width: 25%;"></span>
+        </div>
+      </section>
+    </section>
+
+    <!-- RIGHT COLUMN -->
+
+    <section class="right-column col-3">
+
+        <div class="btn-group list-group " role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action" name="btnradio"
+            id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-danger" for="btnradio1">
+            <a href="#contexto">
+            ¿Que pasa con programación web?
+            </a>
+          </label>
+  
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action" name="btnradio"
+            id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btnradio2">
+            <a href="#fundamentos">
+                Conceptos básicos
+            </a>
+          </label>
+  
+  
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action"
+             name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btnradio3">
+            <a href="#librería">
+              ¿Como personalizo mi blog?
+            </a>
+          </label>
+
+          
+          <input type="radio" class="btn-check" class="list-group-item list-group-item-action"
+             name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btnradio3">
+            <a href="#markdown-content">
+              Últimos pasos
+            </a>
+          </label>
+  
+      </section>
+  
+      <!-- FOOTER -->
+  
+      <footer class="botones-fin btn-toolbar d-flex justify-content-end row align-items-end container-fluid" role="toolbar"
+        aria-label="Toolbar with button groups">
+        <div class="btn-group me-2 w-25 col" role="group" aria-label="First group">
+          <button type="button" class="btn  botones-fin btn-danger">
+            <a href="#contexto">
+                ¿Que pasa con programación web?
+                </a>
+          </button>
+          <button type="button" class="btn botones-fin btn-danger" >
+            <a href="#fundamentos">
+                Conceptos básicos
+            </a>
+          </button>
+          <button type="button" class="btn botones-fin btn-danger">
+            <a href="#librería">
+                ¿Como personalizo mi blog?
+              </a>
+            </button>
+              <button type="button" class="btn botones-fin btn-danger">
+              <a href="#markdown-content">
+                  Últimos pasos
+                </a>
+            </button>
+            </div>
+      </footer>
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-evenly">
+          <a href="https://twitter.com/freecodecampES" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+          </a>
+          <a  href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/freecodecamp/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+          </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Jane Doe (2022) &#169;</div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

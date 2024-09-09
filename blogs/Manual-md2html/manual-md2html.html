@@ -7,17 +7,21 @@
   <title>Hace tus blogs en HTML manualmente</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/style.css">
 
 </head>
 
 <body>
-  <div class="container-fluid row w-100 p-3">
+  <div class="container-fluid row w-100">
 
     <!-- HEADER -->
 
     <header class="row ">
-      <img class="w-25 p-3 personal-logo" src="/public/Nautilus-logo.png" alt="Nautilus-logo" />
+      <div class="col-12 col-md-6">
+        <a class="w-50 w-md-25 p-3" href="/index.html">
+        <img class="w-50 w-md-25 p-3 personal-logo" src="/public/Nautilus-logo.png" alt="Nautilus-logo" />
+        </a>
+      </div>
       <hr class="border border-danger border-2 opacity-50">
     </header>
 
@@ -36,25 +40,24 @@
     <!-- CENTER COLUMN -->
 
     <section id="markdown-content" class="center-column col-6 content-container">
-      <h3>Vea ambos blogs y decida como desarrollar su página</h3>
+      <h3>Por qué lo haría manual?</h3>
       <hr />
       <p>
-        Es necesario, para que nuestros apuntes sean interpretados por un sitio web como lo vemos pasara los
+        Es necesario para que nuestros apuntes sean interpretados por un sitio web, tal cual como lo vemos, pasarlos de
         <p title="markdown" class="puntomd"> ".md" </p> 
-      a formato de html, de otra forma la página web no lo interpretará.
-      Similar funciones (e incluso muchísimas más) tienen un equivalente en el 
+       formato ".html", de otra forma la página web no lo interpretará y simplemente mostrara hashtags, corchetes raros, etc.
+      Los textos de markdown que utilicemos tienen un equivalente en cualquier otro 
         <p title="documentos con etiquetas que
         dan informacón de su estructuda">lenguaje de etiquetas </p>
-      HTML.
+      como HTML.
       Para poder pasar nuestro código <strong>markdown </strong> vamos a utilizar el "traductor" <a target="_blank"
         href="https://markdowntohtml.com/"> markdowntohtml </a>
-      otro servicio similar que sea de su preferencia.
-      Si bien es cierto que pasar tus blogs a mano requiere conocimientos básicos de HTML y convenientemente CSS,
+      u otro servicio similar que sea de su preferencia.
+      Si bien es cierto que pasar tus blogs a mano requiere conocimientos básicos de HTML y convenientemente JS, esta opción
       abarca un mayor control en tus artículos, pudiendo dar: <p title="Esto es una descripción"> descripciones, </p>
-      <p class="personalization-example"> mayor control en la personalización, </p> inclusión de videos, audios, entre
+      <marquee class="personalization-example"> mayor control en la personalización, </marquee> inclusión de videos, audios, entre
       otros controles
       que serían imposibles puramente con markdown.
-      <hr>
       </p>
     </section>
 
@@ -95,7 +98,7 @@
 
     <footer class="botones-fin btn-toolbar d-flex justify-content-end row align-items-end container-fluid" role="toolbar"
       aria-label="Toolbar with button groups">
-      <div class="btn-group me-2 w-25 p-3 col" role="group" aria-label="First group">
+      <div class="btn-group me-2 w-25 col" role="group" aria-label="First group">
         <button type="button" class="btn  botones-fin btn-danger">
           <a href="#">
             manual-md2html

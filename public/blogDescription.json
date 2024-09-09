@@ -1,23 +1,35 @@
 [
-    {"anchor": "./blogs/Manual-md2html/manual-md2html.html",
-        "title": "Ejemplo del blog pasado de md a html manualmente",
-        "descriptions": "Este es un ejemplo de como renderizar las páginas de md a html de una manera manual, requiere algunos conocimientos de HTML5. Las ventajas de este método es su capacidad de personalización a la hora de hacer subir tus apuntes al blog.",
-        "date": "2/8/2024",
-        "category": "miscellanus",
-        "vulnerabillity": "IDOR"
-    },
     {
         "anchor": "./blogs/XSSportswigger/XSSportswigger.html",
         "title": "Ejemplo del blog con fething",
         "descriptions": "Este es un ejemplo de renderización de los archivos del tipo MarkDown utilizando el método fetch de JavaScript. Las ventajas de este método es que solo tenes que llevar los archivos '.md' y modificar las rutas, tal vez sea la forma más rápida y sencilla de llevar tus apuntes pero está limitada en cuestiones de personalización",
         "date": "2/8/2024",
         "category": "miscellanus",
-        "vulnerabillity": "XSS"
+        "vulnerabillity": "XSS",
+        "difficulty": "leer primero"
+    },
+    {"anchor": "./blogs/Manual-md2html/manual-md2html.html",
+        "title": "Ejemplo del blog pasado de md a html manualmente",
+        "descriptions": "Este es un ejemplo de como renderizar las páginas de md a html de una manera manual, requiere algunos conocimientos de HTML5. Las ventajas de este método es su capacidad de personalización a la hora de hacer subir tus apuntes al blog.",
+        "date": "2/8/2024",
+        "category": "miscellanus",
+        "vulnerabillity": "IDOR",
+        "difficulty": "leer segundo"
+
+    },
+    
+    {"anchor": "./blogs/mdn&html/index.html",
+    "title": "Combinar HTML y mdn, conceptos fundamentales de HTML5",
+    "descriptions": "Este debe ser el tercer blog que debes leer, combina archivos md y html para que veas una última forma de hacer tus blog. Discutiremos como empezar con la página web y aspectos básicos que debes comprender para tener un rápido diagnóstico de un posible problema durante los retoques de tu página web",
+    "date": "8/9/2024",
+    "category": "miscellanus",
+    "vulnerabillity": "HTML injection",
+    "difficulty": "leer tercero"
     },
     {
         "anchor": "./blogs/MundoGaturro/mundoGaturro.html",
         "title": "Hacke mundo gaturro",
-        "descriptions": "Este es un blog donde hackeamos el popular jueguito Argentino llamada \"Mundo Gaturro\" utilizando CheatEngine",
+        "descriptions": "Este blog solo está para rellenar",
         "date": "7/7/2014",
         "category": "history",
         "vulnerabillity": "Broken Access Control"
@@ -25,7 +37,7 @@
     {
         "anchor": "./blogs/estoy-cansado-jefe/estoyCansadoJefe.html",
         "title": "Estoy cansado jefe",
-        "descriptions": "En este blogs discutermos como muchos hackeos puden causar tunel carpal y arruinarte la vida",
+        "descriptions": "Este blog solo está para rellenar",
         "date": "24/7/2024",
         "category": "history"
     }
